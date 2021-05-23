@@ -1,0 +1,146 @@
+.mangaScreen {
+  width: 100%;
+  &__container {
+    min-height: 100vh;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    color: #eee;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 50px;
+
+    h1 {
+      padding-top: 10%;
+      border-bottom: 1px solid slategray;
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 50px;
+  }
+
+  &__sidebar {
+    flex: 0;
+    font-size: 14px;
+
+    strong {
+      color: #fd9330;
+    }
+
+    h2 {
+      font-weight: 600;
+      border-bottom: 1px solid slategray;
+    }
+
+    &Info {
+      padding: 20px 0;
+    }
+
+    img {
+      width: 200px;
+      height: 300px;
+      object-fit: cover;
+    }
+  }
+
+  &__body {
+    flex: 1;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  &__scoreInfo {
+    display: flex;
+
+    &-rating {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      padding-right: 15px;
+      border-right: 1px solid slategray;
+
+      &Title {
+        flex: 0;
+        background-color: #fd9330;
+        font-weight: 700;
+      }
+
+      &Score {
+        font-size: 32px;
+        font-weight: 600;
+      }
+
+      &Users {
+        font-size: 14px;
+        color: #fd9330;
+      }
+    }
+  }
+
+  a {
+    text-decoration: none;
+    color: cyan;
+    transition: all 0.3s ease;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &__rankInfo {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: space-between;
+    padding: 10px 15px;
+
+    &-firstSpan,
+    &-secondSpan {
+      padding-right: 15px;
+    }
+  }
+
+  &__details {
+    padding-top: 5%;
+    flex: 1;
+
+    h3 {
+      border-bottom: 1px solid slategray;
+      padding-bottom: 5px;
+      padding-top: 2%;
+    }
+
+    p {
+      padding-top: 5px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .mangaScreen__container {
+    width: 90%;
+    padding-top: 20%;
+  }
+
+  .mangaScreen__body {
+    padding-top: 30px;
+  }
+
+  .mangaScreen__rankInfo {
+    font-size: 11px;
+  }
+}
+
+@media (max-width: 486px) {
+  .mangaScreen__body {
+    padding-left: 0;
+    font-size: 10px;
+  }
+
+  .mangaScreen__sidebar {
+    flex: 1;
+  }
+}

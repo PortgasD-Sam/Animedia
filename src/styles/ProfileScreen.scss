@@ -1,0 +1,95 @@
+.profileScreen {
+  height: 100vh;
+  color: #eee;
+
+  &__body {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 200px;
+    max-width: 800px;
+
+    h1 {
+      font-size: 60px;
+      font-weight: 400;
+      border-bottom: 1px solid #282c2d;
+      margin-bottom: 20px;
+    }
+  }
+
+  &__info {
+    display: flex;
+
+    img {
+      height: 100px;
+    }
+  }
+
+  &__details {
+    color: #eee;
+    margin-left: 25px;
+    flex: 1;
+
+    h2 {
+      background-color: gray;
+      padding: 15px;
+      font-size: 15px;
+      padding-left: 20px;
+    }
+  }
+
+  &__signOut {
+    padding: 10px 20px;
+    font-size: 1rem;
+    margin-top: 5%;
+    width: 100%;
+    color: #eee;
+    background-color: #fd9330;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+  }
+
+  &__plans {
+    margin-top: 20px;
+
+    h3 {
+      border-bottom: 1px solid #282c2d;
+      padding-bottom: 10px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .profileScreen {
+    &__body {
+      h1 {
+        font-size: 32px;
+        font-weight: 400;
+        border-bottom: 1px solid #282c2d;
+        margin-bottom: 20px;
+      }
+    }
+
+    &__info {
+      img {
+        height: 50px;
+      }
+    }
+
+    &__details {
+      color: #eee;
+      margin-left: 5px;
+      flex: 1;
+
+      h2 {
+        background-color: gray;
+        padding: 5px 15px;
+        font-size: 15px;
+        text-align: center;
+      }
+    }
+  }
+}
